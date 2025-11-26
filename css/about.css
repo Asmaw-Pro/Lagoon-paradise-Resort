@@ -1,0 +1,208 @@
+/* #region About */
+.about {
+    background: var(--bg-base);
+}
+.about .aboutBox {
+    display: flex;
+    gap: clamp(18px, 3vw, 36px);
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 6px 18px;
+}
+
+.about .aboutBox img {
+    flex: 0 0 46%;
+    width: 46%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(2, 10, 18, 0.12);
+    display: block;
+    position: relative;
+}
+.about .aboutBox p {
+    flex: 1 1 54%;
+    margin: 0;
+    color: var(--text-main);
+    font-size: clamp(15px, 2vw, 19px);
+    line-height: 1.9;
+    font-weight: 500;
+}
+.about .aboutBox p::first-line {
+    float: right;
+    font-size: 25px;
+    line-height: 1;
+    color: var(--secondary);
+    font-weight: 800;
+}
+@media (max-width: 900px) {
+    .about .aboutBox {
+        gap: 18px;
+        padding: 8px 12px;
+        flex-direction: column;
+    }
+    .about .aboutBox.boxSecound {
+        flex-direction: column-reverse;
+    }
+    .about .aboutBox img {
+        width: 80%;
+        height: auto;
+        flex: 0 0 auto;
+    }
+    .about .aboutBox p {
+        text-align: center !important;
+        font-size: clamp(15px, 3.6vw, 18px);
+    }
+    .about .aboutBox p::first-line {
+        line-height: 1.7;
+    }
+}
+.spacer {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+}
+.about p.text {
+    color: var(--bg-dark);
+    padding: 10px;
+    width: fit-content;
+    margin: 10px auto 0;
+    border-block: 1px solid #79c8c784;
+}
+/* #endregion About */
+/* #region our location */
+.our-location {
+    padding-bottom: 0 !important;
+}
+.our-location .details {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+@media (max-width:767px) {
+    .our-location .details {
+        text-align: center;
+    }
+}
+/* #endregion our location */
+/* #region Reaching Us */
+.reaching-us p {
+    line-height: 1.7;
+    padding: 20px 0;
+    color: var(--text-main);
+    font-size: 20px;
+}
+.reaching-us p:first-of-type {
+    padding-top: 0;
+}
+.reaching-us .location-wraper {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+.reaching-us .location-wraper .details {
+    width: 35%;
+}
+.reaching-us .map-wrap {
+    flex-grow: 1;
+}
+.reaching-us .map-iframe {
+    border: 0;
+    display: block;
+}
+.reaching-us .map-credit {
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px 20px !important;
+    width: fit-content;
+    background: var(--bg-base);
+}
+@media (max-width:991px) {
+    .reaching-us .location-wraper {
+        flex-direction: column;
+    }
+    .reaching-us .location-wraper .details {
+        width: 100%;
+    }
+}
+/* #endregion Reaching Us */
+/* #region resort info */
+.resort-info {
+    background: linear-gradient(to bottom, rgba(0,106,148,0.10), rgba(255,255,255,0.6)); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.resort-info .container {
+    display: grid;
+    gap: 25px;
+}
+@media (min-width: 768px) {
+    .resort-info .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.resort-info .card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border-bottom: 6px solid var(--primary);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    transition: var(--transition-duration) ease;
+}
+.resort-info .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.resort-info .card i {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.1));
+}
+.resort-info .card :is(a,p) {
+    display: block;
+    direction: ltr;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--text-main);
+}
+.resort-info .card a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+.resort-info .book-btn {
+    margin-top: 35px;
+    padding: 15px 35px;
+    background-color: var(--primary);
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: var(--transition-duration);
+    box-shadow: 0 5px 15px rgba(0,106,148,0.35);
+}
+.resort-info .book-btn:hover {
+    background: var(--btn-primary-hover);
+    transform: translateY(-4px);
+}
+.resort-info ul.stars {
+    display: flex;
+    justify-content: center;
+    direction: ltr;
+    margin-bottom: 10px;
+}
+.resort-info ul.stars i {
+    font-size: 25px;
+}
+.resort-info i.filled {
+    color: #ffc107;
+}
+/* #endregion resort info */
+

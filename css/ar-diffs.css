@@ -1,0 +1,59 @@
+.memberships .memberships-card .priceing-info .price span:first-of-type {
+    top: -5px;
+    right: -25px;
+}
+.memberships .memberships-card .priceing-info .price span:last-of-type {
+    left: -5px;
+    right: auto;
+    bottom: -10px;
+}
+:where(.units,.events,.resort-info,.memberships,.restorunt-menu,.wrap) .spacial-Title {
+    padding-right: 45px;
+}
+:where(.units,.events,.resort-info,.memberships,.restorunt-menu,.wrap) .spacial-Title img {
+    right: 40px;
+}
+footer ul.nav-links li:hover {
+    transform: translate(-10px);
+}
+@media (max-width: 767px) {
+    header .check-menu:checked + .menu > span:nth-child(2) {
+        transform: translateX(150%);
+    }
+    header .container .check-menu:checked ~ .homePageMenu {
+        right: 0;
+        border-bottom-right-radius: 50px;
+        background: linear-gradient(
+            to left,
+            var(--primary),
+            var(--secondary),
+            transparent
+        );
+	}
+    header .check-menu:checked + .menu > span:nth-child(1) {
+        transform: translateY(10px) rotate(135deg);
+    }
+    header .check-menu:checked + .menu > span:nth-child(3) {
+        transform: translateY(-11px) rotate(-135deg);
+    }   
+    header .container .homePageMenu > :is(a,label.choose-menu) {
+        padding: 20px 50px 20px 20px;
+        border-radius: 50px 0;
+    }
+    header .homePageMenu .menu-links a {
+        padding-right: 50px;
+        border-radius: 50px 0;
+    }
+}
+.about .aboutBox:first-of-type p {
+    text-align: right;
+}
+.about .aboutBox:last-of-type p {
+    text-align: left;
+}
+:where(.about:has(.aboutUs),.reaching-us) .spacial-Title {
+    padding-right: 45px;
+}
+:where(.about:has(.aboutUs),.reaching-us) .spacial-Title img {
+    right: 40px;
+}

@@ -1,0 +1,171 @@
+/* #region membership */
+.memberships {
+    --brand: #006a94;
+    --text: #304c78;
+    --muted: #6b7280;
+    --bg: #e6f2f574;
+    background: var(--bg);
+    max-width: 100%;
+    margin: 0;
+    padding: 30px 20px 60px;
+}
+.memberships p.desc {
+    color: var(--muted);
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    line-height: 1.7;
+}
+.memberships .memberships-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.memberships .memberships-cards .memberships-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(2, 10, 18, 0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(2, 10, 18, 0.03);
+    overflow: hidden;
+}
+@media (max-width:767px) {
+    .memberships .memberships-cards .memberships-card {
+        height: fit-content;
+    }
+}
+.memberships .memberships-cards .memberships-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(2, 10, 18, 0.12);
+}
+.memberships .memberships-cards .memberships-card h3 {
+    font-size: 20px;
+    margin-top: 0;
+    color: var(--brand);
+    text-align: right;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.memberships .memberships-card .priceing-info {
+    background: var(--bg-gradient);
+    color: white !important;
+    padding: 10px 0;
+}
+.memberships .memberships-card .priceing-info .price {
+    width: 100px;
+    height: 60px;
+    margin: 15px auto 25px;
+    position: relative;
+}
+.memberships .memberships-card .priceing-info .price span {
+    position: absolute;
+    font-size: 14px;
+}
+.memberships .memberships-card .priceing-info .price span:first-of-type {
+    top: -10px;
+    left: -15px;
+}
+.memberships .memberships-card .priceing-info .price span:last-of-type {
+    right: -30px;
+    bottom: -15px;
+}
+.memberships .memberships-card .priceing-info .price h3 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.memberships .memberships-card .priceing-info .name {
+    border-bottom: 1px solid #ffffff1a;
+    text-shadow: 0px 2px 3px #ffffff7a;
+    margin-bottom: 20px;
+    color: #073446;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    padding: 15px 0 15px;
+}
+.memberships .memberships-cards .memberships-card .details {
+    flex: 1;
+}
+.memberships .memberships-cards .memberships-card ul {
+    padding: 26px 26px 0;
+}
+.memberships .memberships-cards .memberships-card ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.memberships .memberships-cards .memberships-card ul li {
+    padding: 14px 12px;
+    list-style: none;
+    text-align: center;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 600;
+    background-clip: padding-box;
+}
+.memberships .memberships-cards a {
+    padding: 15px 20px;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 30px;
+    background: var(--bg-gradient);
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+.memberships .memberships-cards .buttons {
+    margin-top: 22px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.memberships .memberships-cards .buttons button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.16s ease, transform 0.12s ease;
+    box-shadow: 0 6px 14px rgba(2, 10, 18, 0.06);
+}
+.memberships .memberships-cards .booking .toBook {
+    text-align: center;
+    font-weight: bold;
+}
+.memberships .memberships-cards .buttons a {
+    text-decoration: none;
+}
+.btn-primary {
+    background: var(--brand);
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #004f6e;
+}
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--brand);
+    border: 1px solid rgba(2, 10, 18, 0.04);
+}
+.btn-secondary:hover {
+    background: #e6f3f6;
+}
+.membership-footer {
+    color: var(--muted);
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 40px auto 0;
+}
+/* #endregion membership */

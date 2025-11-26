@@ -1,0 +1,188 @@
+/* #region Booking form */
+.booking-section {
+    padding: clamp(28px, 4.5vw, 56px) 0;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(247, 247, 248, 0.02)
+    );
+}
+.booking-section p {
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto ;
+    color: #444;
+    line-height: 1.8;
+}
+.booking-section .booking-form {
+    max-width: 950px;
+    margin: 14px auto 0;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 12px 36px rgba(2, 10, 18, 0.06);
+}
+.booking-section .booking-form fieldset {
+    border: none;
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+.booking-section .booking-form legend {
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+.booking-section .booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+.booking-section .booking-form label :is(input,select,textarea) {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    resize: none;
+}
+.booking-section form .radio-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.booking-section form .radio-row .inline {
+    margin-left: 8px;
+}
+.booking-section form fieldset .small-note {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+.booking-section form .form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+.booking-section form .form-actions .booking-result {
+    color: var(--primary);
+    font-weight: 700;
+    display: block;
+}
+.booking-section .booking-form {
+    max-width: 980px;
+    margin: 20px auto 0;
+    background: linear-gradient(180deg, #ffffff, #fcfcfd);
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 16px 44px rgba(2, 10, 18, 0.06);
+    border: 1px solid rgba(2, 10, 18, 0.03);
+}
+.booking-section .booking-form fieldset {
+    border: none;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+.booking-section .booking-form legend {
+    font-weight: 900;
+    color: var(--bg-dark);
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+.booking-section .booking-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    font-weight: 700;
+}
+.booking-section .booking-form label input,
+.booking-section .booking-form label select,
+.booking-section .booking-form label textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 14px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 0.98rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+.booking-section .booking-form label input:focus,
+.booking-section .booking-form label select:focus,
+.booking-section .booking-form label textarea:focus {
+    outline: none;
+    box-shadow: 0 6px 18px rgba(5, 94, 139, 0.12);
+    border-color: var(--primary);
+}
+.booking-section .radio-row {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.booking-section .radio-row span {
+    font-weight: 700;
+    color: var(--text-main);
+}
+.booking-section .radio-row .inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.booking-section .small-note {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    text-align: right;
+}
+.booking-section .form-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+.booking-section .booking-result {
+    color: var(--primary);
+    font-weight: 800;
+}
+@media (min-width: 880px) {
+    .booking-section .booking-form {
+        padding: 26px;
+    }
+    .booking-section .booking-form .booking-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 20px;
+        align-items: start;
+    }
+    .booking-section .booking-form legend {
+        grid-column: 1/-1;
+    }
+    .booking-section .booking-form label.full {
+        grid-column: 1/-1;
+    }
+}
+.booking-section .booking-form .btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(5, 94, 139, 0.16);
+    transition: var(--transition-duration);
+}
+.booking-section .booking-form .btn-primary:hover {
+    background: var(--btn-primary-hover);
+    color: white;
+}
+/* #endregion Booking form */

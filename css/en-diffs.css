@@ -1,0 +1,55 @@
+.spacial-Title img {
+    left: 25px !important;
+    transform: translate(-100%, -50%);
+}
+.spacial-Title {
+    padding-left: 35px !important ;
+}
+@media (max-width:767px) {
+	.spacial-Title {
+		font-size: 25px;
+	}
+}
+footer ul.nav-links li::marker {
+    content: "\F101";
+}
+footer ul:has(.numbers) i {
+	transform: scaleX(-1);
+}
+footer ul.nav-links li:hover {
+    transform: translate(10px);
+}
+@media (max-width: 767px) {
+    header .check-menu:checked + .menu > span:nth-child(2) {
+        transform: translateX(-150%);
+    }
+    header .check-menu:checked + .menu > span:nth-child(1) {
+        transform: translateY(10px) rotate(-135deg);
+    }
+    header .check-menu:checked + .menu > span:nth-child(3) {
+        transform: translateY(-11px) rotate(135deg);
+    }   
+    header .container .check-menu:checked ~ .homePageMenu {
+        left: 0;
+		border-bottom-left-radius: 50px;
+        background: linear-gradient(
+            to right, var(--primary)
+            ,var(--secondary),
+            transparent
+        );
+	}
+    header .container .homePageMenu > :is(a,label.choose-menu) {
+        padding: 20px 20px 20px 50px;
+        border-radius: 0 50px;
+    }
+    header .homePageMenu .menu-links a {
+        padding-left: 50px;
+        border-radius: 0 50px;
+    }
+}
+.aboutBox:first-of-type p {
+    text-align: left;
+}
+.aboutBox:last-of-type p {
+    text-align: right;
+}

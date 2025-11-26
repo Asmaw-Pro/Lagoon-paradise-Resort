@@ -1,0 +1,105 @@
+.menu-grid .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    align-items: start;
+    padding-bottom: 0;
+}
+.card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(9,31,56,0.06);
+    min-height: 280px;
+}
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+.card h2 i {
+    color: var(--accent);
+    font-size: 18px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.06);
+}
+.item:last-of-type {
+    border-bottom: none;
+}
+.item .name {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+.item .desc {
+    display: block;
+    color: var(--text-sec);
+    font-size: 13px;
+    margin-top: 4px;
+}
+.price {
+    padding: 6px 10px;
+    background: var(--bg-gradient);
+    color: #fff;
+    border-radius: 999px;
+    font-weight: 700;
+    min-width: 56px;
+    text-align: center;
+}
+.flavors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.chip {
+    background: #f6f8fa;
+    color: var(--text-main);
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: 0 6px 18px rgba(9,31,56,0.04);
+}
+.pdf-link {
+    margin: 18px auto 30px;
+    text-align: center;
+}
+.pdf-link a {
+    padding: 12px 20px;
+    display: inline-block;
+    background: var(--bg-gradient);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.contact {
+    margin-top: 12px;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, #fff 100%);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(9,31,56,0.04);
+}
+.item:hover {
+    transform: translateY(-4px);
+    transition: transform var(--transition-duration);
+}
+@media (max-width: 768px) {
+    .brand {
+        gap: 12px;
+    }
+    .brand h1 {
+        font-size: 20px;
+    }
+    .card {
+        padding: 14px;
+    }
+}

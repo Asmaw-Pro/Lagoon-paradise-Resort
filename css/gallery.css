@@ -1,0 +1,40 @@
+.gallery {
+    padding-bottom: 5px;
+}
+.gallery-filters {
+    text-align: center;
+    margin: 20px 0;
+}
+.gallery-filters button {
+    background: #eee;
+    border: 2px solid #eee;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: .3s;
+}
+.gallery-filters button.active {
+    background: var(--primary);
+    color: #fff;
+}
+.gallery-filters button:hover {
+    border-color: var(--secondary);
+}
+.gallery-grid {
+    column-count: 4;
+    column-gap: 10px;
+}
+@media (max-width: 992px) {
+    .gallery-grid { column-count: 3; }
+}
+@media (max-width: 600px) {
+    .gallery-grid { column-count: 2; }
+}
+.gallery-grid .image img {
+    width: 100%;
+    border-radius: var(--main-radius);
+    margin-bottom: 5px;
+    break-inside: avoid; 
+}

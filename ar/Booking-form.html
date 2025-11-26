@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا — منتجع لاجون برادايس</title>
+    <link rel="icon" href="../assets/images/logo.jpg" type="image/png">
+    <meta name="description" content="قدم طلب حجز إقامتك في منتجع لاجون برادايس بدرة العروس. اختر الوحدة، التواريخ والإضافات، وسيتواصل فريقنا لتأكيد الحجز وتوفير كافة التفاصيل.">
+    <meta name="keywords" content="حجز, طلب حجز, حجز منتجع, لاجون برادايس حجز, درة العروس حجز, منتجع جدة حجز">
+    <meta http-equiv="Content-Language" content="ar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="نموذج طلب الحجز — منتجع لاجون برادايس">
+    <meta property="og:description" content="احجز الآن في منتجع لاجون برادايس — اختر الوحدة، التواريخ والإضافات وسنتواصل معك لتأكيد الحجز.">
+    <meta property="og:image" content="../assets/images/no-background-logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="منتجع لاجون برادايس">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/Booking-form.css">
+    <link rel="stylesheet" href="../css/ar-diffs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body dir="rtl"> 
+    <header id="top">
+        <div class="container">
+            <input class="check-menu" id="check-menu" type="checkbox">
+            <label for="check-menu" class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="logo">
+                <img src="../assets/images/no-background-logo.png" alt="">
+            </div>
+            <div class="homePageMenu">
+                <a href="./index.html">الرئيسيه</a>
+                <a href="./about.html">عن المنتجع</a>
+                <a href="./units.html">الوحدات</a>
+                <a href="./servises.html">خدماتنا</a>
+                <a href="./memberships.html">عضويات النادي</a>
+                <a href="./Booking-form.html">تواصل معنا</a>
+                <input type="checkbox" id="choose-menu">
+                <label class="choose-menu" for="choose-menu">المنيو <i class="fa-solid fa-angle-down"></i></label>
+                <div class="menu-links">
+                    <a href="./coffee-menu.html">منيو الكافيه</a>
+                    <a href="./restorunt-menu.html">منيو المطعم</a>
+                </div>
+                <a href="./gallery.html">معرض الصور</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="booking-section" id="booking">
+            <div class="container">
+                <h2 class="spacial-Title">
+                    <img src="../assets/images/no-background-logo.png">
+                    نموذج طلب الحجز
+                </h2>
+                <p>يرجى تعبئة
+                    البيانات التالية بدقة، علمًا أن تقديم هذا النموذج لا يُعد عقدًا ملزمًا، وإنما يخضع
+                    للمراجعة والموافقة من إدارة منتجع لاجون برادايس.</p>
+                <form id="bookingForm" class="booking-form" novalidate>
+                    <fieldset>
+                        <legend>بيانات المتقدم</legend>
+                        <label>الاسم الكامل <input name="fullName" type="text" placeholder="الاسم الكامل" required></label>
+                        <label>رقم الهوية / الإقامة <input name="idNumber" type="text" placeholder="رقم الهوية أو الإقامة"
+                                required></label>
+                        <label>رقم الجوال <input name="mobile" type="tel" placeholder="مثال: 9665XXXXXXXX" required></label>
+                        <label>تاريخ الميلاد <input name="dob" type="date"></label>
+                        <div class="radio-row">
+                            <span>الجنس</span>
+                            <label class="inline"><input name="gender" type="radio" value="ذكر" required>
+                                ذكر</label>
+                            <label class="inline"><input name="gender" type="radio" value="أنثى">
+                                أنثى</label>
+                        </div>
+                        <label>الجنسية (اختياري) <input name="nationality" type="text" placeholder="الجنسية"></label>
+                        <label>عدد أفراد العائلة <input name="familyCount" type="number" min="1" placeholder="عدد الأفراد"
+                                required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>تفاصيل الإقامة</legend>
+                        <label>نوع الوحدة المطلوبة
+                            <select name="unitType">
+                                <option value="">-- اختر --</option>
+                                <option>فيلا 5 غرف بمسبح</option>
+                                <option>فيلا 5 غرف علوي بدون مسبح</option>
+                                <option>شقة غرفة وصالة</option>
+                                <option>شقة استوديو</option>
+                            </select>
+                        </label>
+                        <label>تاريخ الوصول <input name="arrivalDate" type="date"></label>
+                        <label>عدد الليالي <input name="nights" type="number" min="1"></label>
+                        <label class="full">ملاحظات إضافية <textarea name="notes" rows="3"
+                                placeholder="ملاحظات أو طلبات خاصة"></textarea></label>
+                        <p class="small-note">يرجى من الزوار الالتزام بدخول العائلات فقط. يُدفع مبلغ التأمين
+                            نقدًا عند الدخول.</p>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">إرسال طلب الحجز</button>
+                        <div id="bookingResult" class="booking-result" role="status" aria-live="polite">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">                
+            <div>
+                <p class="brand-name">
+                    <img class="logo" src="../assets/images/no-background-logo.png" alt="logo">
+                    <span>لاجون برادايس</span>
+                </p>
+                <p class="description">منتجع فاخر باطلالة بحرية خلابه. يقدم لك تجربه فريدة من الراحة والترفيه على مدار العام.</p>
+                <p>تابعونا على</p>
+                <div class="social-links">
+                    <a href="https://wa.me/+966546190052" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@sp.salsabil" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sp.salsabil" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://snapchat.com/t/JQ9Tzn11" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-snapchat" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav-links">
+                    <li><a href="./index.html">الرئيسية</a></li>
+                    <li><a href="./about.html">عن المنتجع</a></li>
+                    <li><a href="./units.html">الوحدات</a></li>
+                    <li><a href="./servises.html">الخدمات</a></li>
+                    <li><a href="./memberships.html">العضويات</a></li>
+                </ul>
+                <ul class="nav-links">
+                    <li><a href="./restorunt-menu.html">منيو المطعم</a></li>
+                    <li><a href="./coffee-menu.html">منيو الكافيه</a></li>
+                    <li><a href="./Booking-form.html">تواصل معنا</a></li>
+                    <li><a href="./gallery.html">المعرض</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li class="numbers">
+                    <i class="fas fa-phone-volume"></i>
+                    <div>
+                        <span>0546190052</span>
+                        <span>0569974215</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    درة العروس | ذهبان | جدة
+                </li>
+                <li>
+                    <a class="book-now" href="https://wa.me/+966546190052">
+                        احجز الآن
+                    </a>
+                </li>
+                <li>
+                    <a class="Language-switch" href="../en/Booking-form.html">
+                        English
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="Copyright">
+            <p>جميع الحقوق محفوظة &copy; لاجون باراديس 2025</p>
+            <p>تم التطوير بواسطة <a href="https://github.com/Mohammed-Awad-ENG">Mohammed</a> and <a href="https://github.com/Asmaw-Pro">Asmaw Pro</a></p>
+        </div>
+    </footer>
+</body>
+</html>
