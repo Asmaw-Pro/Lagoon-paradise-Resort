@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lagoon-Paradise
 
 Lagoon-Paradise/
@@ -97,3 +98,6 @@ Lagoon-Paradise/
     └── main.js
     
     
+=======
+
+>>>>>>> df09af261c97e2b82af39d523c71292f856d4f34
