@@ -76,6 +76,7 @@ section {
     margin: 0 auto 35px;
     position: relative;
     color: var(--accent);
+    text-align: center;
 }
 @media (min-width:768px) {
     .spacial-Title {
